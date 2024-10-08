@@ -25,6 +25,12 @@
     display: none;
 }
 
+#ulPlaylist li {
+    display: flex; /* Use flexbox to align items in a row */
+    justify-content: space-between; /* Space between title and play count */
+    align-items: center; /* Center vertically */
+}
+
 #ulPlaylist li a {
     color: #eeeedd;
     background: #333;
@@ -38,11 +44,13 @@
 
 .play-count {
     color: #ccc;
-    font-size: 12px;
-    margin-top: 5px;
+    font-size: 09px;
+    margin-left: 10px; /* Space between title and play count */
 }
 
 @smedia screen and (max-width: 950px) {
-    #divMainPlayer { margin: 0px; width: 90%;
+    #divMainPlayer {
+        margin: 0px;
+        width: 90%;
     }
 }
