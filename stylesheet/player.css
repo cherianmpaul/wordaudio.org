@@ -1,56 +1,13 @@
-#divMainPlayer {
-    margin: 0px auto;
-    width: 849px;
-}
+#divMainPlayer{margin:0px auto;width:849px;}
+#ulPlaylist,#audMainPlayer{background:#777;width:100%;padding:20px;}
+#ulPlaylist .active a{color:#5DB0E6;text-decoration:none;}
+#ulPlaylist .active div{display:block;}
+#ulPlaylist .scripts {background:#FFFFFF;padding:20px;display:none;}
+#ulPlaylist li a{color:#eeeedd;background:#333;padding:5px;display:block;}
+#ulPlaylist li a:hover{text-decoration:none;}
 
-#ulPlaylist,
-#audMainPlayer {
-    background: #777;
-    width: 100%;
-    padding: 20px;
-}
+#smlProgress{color: #888;}
 
-#ulPlaylist .active a {
-    color: #5DB0E6;
-    text-decoration: none;
-}
-
-#ulPlaylist .active div {
-    display: block;
-}
-
-#ulPlaylist .scripts {
-    background: #FFFFFF;
-    padding: 20px;
-    display: none;
-}
-
-#ulPlaylist li {
-    display: flex; /* Use flexbox to align items in a row */
-    justify-content: space-between; /* Space between title and play count */
-    align-items: center; /* Center vertically */
-}
-
-#ulPlaylist li a {
-    color: #eeeedd;
-    background: #333;
-    padding: 5px;
-    display: block;
-}
-
-#ulPlaylist li a:hover {
-    text-decoration: none;
-}
-
-.play-count {
-    color: #ccc;
-    font-size: 09px;
-    margin-left: 10px; /* Space between title and play count */
-}
-
-@smedia screen and (max-width: 950px) {
-    #divMainPlayer {
-        margin: 0px;
-        width: 90%;
-    }
+@media screen and (max-width:950px){
+	#divMainPlayer{margin:0px;width:90%;}
 }
